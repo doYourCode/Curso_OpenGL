@@ -1,10 +1,13 @@
 #pragma once
 
 #include "glad/glad.h"
-#include <GLFW/glfw3.h>
+
+#define GLFW_INCLUDE_NONE
+#include "GLFW/glfw3.h"
+
 #include <iostream>
-#include <functional>
 #include <string>
+#include <string_view>
 
 namespace Common
 {
@@ -22,8 +25,7 @@ namespace Common
          * @param title The title of the application window (default: "GLFW Application").
          */
         IApplication(const std::string& title = "GLFW Application", int width = 800, int height = 600)
-            : m_Width(width), m_Height(height), m_Title(title) {
-        }
+            : m_Width(width), m_Height(height), m_Title(title) { }
 
         /**
          * @brief Destroys the ApplicationInterface instance.
@@ -62,6 +64,14 @@ namespace Common
          * @return The window height in pixels.
          */
         inline int GetHeight() const { return m_Height; }
+
+        /**
+         * @brief Sets the width and height of the application window.
+         *
+         * @param width The new window width.
+         * @param height The new window height.
+         */
+        inline void SetDimensions(unsigned int width, unsigned int height) { m_Width = width; m_Height = height; }
 
         /**
          * @brief Gets the title of the application window.

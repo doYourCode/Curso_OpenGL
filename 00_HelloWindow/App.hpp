@@ -4,8 +4,6 @@
 
 #include <glm/glm.hpp>
 
-using Color = glm::vec4;
-
 class App : public Common::IApplication
 {
 public:
@@ -16,10 +14,12 @@ public:
 
     void OnRender() final;
 
-    void OnShutdown() final;
+    void OnShutdown() final { /* Must be overriden */ }
+
+    void OnResize(GLFWwindow* window, int width, int height) final;
 
 private:
 
-    Color m_BgColor = Color(1.0f, 0.0f, 0.0f, 1.0f);
+    glm::vec4 m_BgColor = { 1.0f, 0.0f, 0.0f, 1.0f };
 };
 
