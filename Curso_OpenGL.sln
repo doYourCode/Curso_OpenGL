@@ -15,6 +15,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "glad", "external\glad\glad.
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "spdlog", "external\spdlog\spdlog.vcxproj", "{3430FE23-A786-38A8-9BCB-D306DAF29F9A}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "00_HelloWindow", "00_HelloWindow\00_HelloWindow.vcxproj", "{5F6CB78D-BED9-4078-B675-DA7981E05546}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -63,6 +65,14 @@ Global
 		{3430FE23-A786-38A8-9BCB-D306DAF29F9A}.Release|x64.Build.0 = Release|x64
 		{3430FE23-A786-38A8-9BCB-D306DAF29F9A}.Release|x86.ActiveCfg = Release|x64
 		{3430FE23-A786-38A8-9BCB-D306DAF29F9A}.Release|x86.Build.0 = Release|x64
+		{5F6CB78D-BED9-4078-B675-DA7981E05546}.Debug|x64.ActiveCfg = Debug|x64
+		{5F6CB78D-BED9-4078-B675-DA7981E05546}.Debug|x64.Build.0 = Debug|x64
+		{5F6CB78D-BED9-4078-B675-DA7981E05546}.Debug|x86.ActiveCfg = Debug|Win32
+		{5F6CB78D-BED9-4078-B675-DA7981E05546}.Debug|x86.Build.0 = Debug|Win32
+		{5F6CB78D-BED9-4078-B675-DA7981E05546}.Release|x64.ActiveCfg = Release|x64
+		{5F6CB78D-BED9-4078-B675-DA7981E05546}.Release|x64.Build.0 = Release|x64
+		{5F6CB78D-BED9-4078-B675-DA7981E05546}.Release|x86.ActiveCfg = Release|Win32
+		{5F6CB78D-BED9-4078-B675-DA7981E05546}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
