@@ -154,11 +154,19 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Application\IApplication.h" />
+    <ClInclude Include="Util\TextureUtility.h" />
+    <ClInclude Include="Util\ShaderUtility.h" />
+    <ClInclude Include="Util\FileUtility.hpp" />
     <ClInclude Include="Util\MathUtility.hpp" />
+    <ClInclude Include="Util\external\tinyfiledialogs.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Application\IApplication.cpp" />
+    <ClCompile Include="Util\TextureUtility.cpp" />
+    <ClCompile Include="Util\ShaderUtility.cpp" />
+    <ClCompile Include="Util\FileUtility.cpp" />
     <ClCompile Include="Util\MathUtility.cpp" />
+    <ClCompile Include="Util\external\tinyfiledialogs.c" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\external\glad\glad.vcxproj">
